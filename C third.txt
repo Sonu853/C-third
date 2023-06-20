@@ -1,0 +1,220 @@
+Write a method that checks if given number (positive integer) contains digit 3. Do not convert number to other type. Do not use built-in functions like Contains(), StartsWith(), etc.
+
+using System;
+public class HelloWorld
+{
+public static void Main(string[] args)
+{
+int a;string str;
+Console.Write("Enter any No ");  
+a= Convert.ToInt32(Console.ReadLine());
+ str = a.ToString();
+   for (int i = 0; i < str.Length; i++)
+       if (str[i] == ((char) 3) + '0')
+      Console.WriteLine(" {0} contains 3\n",a);
+    else
+    Console.WriteLine(" {0} doesnot contains 3\n",a);
+}
+}
+
+
+Write a method that should check no is palidrome or not.
+
+using System;
+
+public class HelloWorld
+{
+    
+public static void Main(string[] args)
+    
+{
+  
+int a;string s,rev="";
+    
+Console.Write("Enter any No ");  
+        
+a= Convert.ToInt32(Console.ReadLine());
+        
+s = a.ToString();
+        
+for(int i=s.length()-1;i=>0;i--){
+            
+rev=rev+s.charAt(i);
+        
+}
+        
+if (s==rev)
+        
+Console.WriteLine("{0} is palindrome no\n",a);
+
+else
+ 
+Console.WriteLine("{0} is not palindrome \n",a);
+    
+}
+}
+
+
+Write a method that should represent fibinacci series
+
+using System;
+
+
+public class HelloWorld
+{
+    
+public static void Main(string[] args)
+    
+{
+       
+int a = 0, b = 1, c = 0,n;  
+    
+Console.Write("Enter the no");
+   
+n= Convert.ToInt32(Console.ReadLine());  
+    
+for (int i = 1; i < n; i++)  
+    {  
+        
+c= a + b;  
+        
+Console.Write(" {0}", c);  
+        
+a= b;  
+        
+b= c;
+       
+}}
+}
+
+
+write a method that swaps without temp variable.                                                         
+using System;
+
+public class HelloWorld
+{
+    
+public static void Main(string[] args)
+    
+{
+       
+int a,b;
+        
+Console.Write("a: ");  
+        
+a= Convert.ToInt32(Console.ReadLine());  
+        
+Console.Write("b:");  
+       
+b= Convert.ToInt32(Console.ReadLine()); 
+       
+a = a + b; 
+      
+b = a - b;
+       
+a = a - b;
+       
+Console.WriteLine("Value of a= {0} and b=  {1} after swapping \n",a,b);
+    
+}
+}
+
+
+write a method that swaps with temp variable.
+                                                         
+using System;
+
+public class HelloWorld
+{
+    
+public static void Main(string[] args)
+    
+{
+       
+int a,b,c;
+        
+Console.Write("a: ");  
+        
+a= Convert.ToInt32(Console.ReadLine());  
+        
+Console.Write("b:");  
+       
+b= Convert.ToInt32(Console.ReadLine()); 
+        
+c = a;
+        
+a = b;
+        
+b = c;
+       
+Console.WriteLine("Value of a= {0} and b=  {1} after swapping \n",a,b);
+    
+}
+}
+
+
+Write a C# program to find the eligibility of admission for a professional course based on the following criteria:
+Marks in Maths >=65
+Marks in Phy >=55
+Marks in Chem>=50
+Total in all three subject >=180
+or
+Total in Math and Subjects >=140
+ 
+                                                         
+using System;
+
+public class HelloWorld
+{
+    
+public static void Main(string[] args)
+    
+{
+       
+int m,p,c;
+        
+Console.Write("Enter marks in physics");  
+        
+p= Convert.ToInt32(Console.ReadLine());  
+        
+Console.Write("Enter marks in maths");  
+       
+m= Convert.ToInt32(Console.ReadLine()); 
+       
+Console.Write("Enter marks in chemistry");  
+       
+c= Convert.ToInt32(Console.ReadLine());
+       
+if ((m>=65) && (p>=55) && (c>=50) &&  (m+p+c)>=180||(m+p)>=140)
+	           
+Console.Write("The  candidate is eligible for admission.\n");
+    
+else
+     
+Console.Write("The candidate is not eligible.\n\n");
+    
+}
+}
+
+
+Write a method that prints 10 by 10 multiplication table. Remember about readibility (spaces in the right place).
+
+using System;
+public class abc  
+{  
+    public static void Main() 
+{
+    int j,i;
+   for(i=1;i<=10;i++)
+   {
+     for(j=1;j<=10;j++)
+     {
+       if (j<=10)
+           Console.Write(" {0} ",i*j);
+          else
+	    Console.Write("{0}",i*j);
+      }
+     Console.Write("\n");
+    }
+  }
+}
